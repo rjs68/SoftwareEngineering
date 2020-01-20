@@ -28,12 +28,6 @@ public class Date {
 	}
 	
 	public int diffInYears(Date d) {
-		if(month < d.getMonth() ||
-				(month == d.getMonth() && day < d.getDay())) {
-			return (year - d.getYear() - 1);
-		}else {
-			return (year - d.getYear());
-		}
-		
+		return (year - d.getYear());
 	}
 }

@@ -1,0 +1,16 @@
+import java.io.PrintStream;
+
+public class Person {
+	private String name;
+	private Date dob;
+	
+	public Person(String name, Date dob) {
+		this.name = name;
+		this.dob = dob;
+	}
+	
+	public void print(PrintStream ps) {
+		ps.print(name + ": ");
+		dob.print(ps);
+	}
+}
