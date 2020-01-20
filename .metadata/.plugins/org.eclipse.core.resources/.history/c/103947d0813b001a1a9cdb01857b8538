@@ -12,7 +12,7 @@ public class Date {
 	}
 	
 	public void print(PrintStream ps) {
-		ps.println(day + "/" + month + "/" + year);
+		
 	}
 	
 	public int getDay() {
@@ -25,9 +25,5 @@ public class Date {
 	
 	public int getYear() {
 		return year;
-	}
-	
-	public int diffInYears(Date d) {
-		return (year - d.getYear());
 	}
 }
