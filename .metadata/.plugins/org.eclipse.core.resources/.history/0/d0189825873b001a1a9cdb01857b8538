@@ -1,0 +1,19 @@
+import java.io.PrintStream;
+
+public class LopTest {
+
+	public static void main(String[] args) {
+		PrintStream ps = new PrintStream(System.out);
+		
+		Lop list = new Lop();
+		
+		Person john = new Person("John", new Date(11, 8, 2017));
+		Person fred = new Person("Fred", new Date(21, 3, 1983));
+		
+		list.add(john);
+		list.add(fred);
+		
+		list.print(ps);
+	}
+
+}

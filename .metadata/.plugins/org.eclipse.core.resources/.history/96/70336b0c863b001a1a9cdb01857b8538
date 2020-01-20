@@ -1,0 +1,16 @@
+
+public class Lop {
+	private Person[] people;
+	private int peopleIndex = 0;
+	
+	public Lop() {
+		people = new Person[10];
+	}
+	
+	public void add(Person person) {
+		if(peopleIndex <= 9) {
+			people[peopleIndex] = person;
+			peopleIndex++;
+		}
+	}
+}
