@@ -1,0 +1,22 @@
+import java.io.PrintStream;
+
+public class Worker extends Person{
+	Boss boss;
+	
+	public Worker(String name, Date dob, Boss boss) {
+		super(name, dob);
+		this.boss = boss;
+	}
+	
+	public void newBoss(Boss newBoss) {
+		boss = newBoss;
+	}
+	
+	public Boss getBoss() {
+		return boss;
+	}
+	
+	public void print(PrintStream ps) {
+		ps.print(this.getName());
+	}
+}

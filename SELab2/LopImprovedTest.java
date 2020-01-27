@@ -1,0 +1,35 @@
+import java.io.PrintStream;
+
+public class LopImprovedTest {
+
+	public static void main(String[] args) {
+		//Create a PrintStream object
+		PrintStream ps = new PrintStream(System.out);
+		
+		//Create a new Lop
+		LopImproved list = new LopImproved();
+		
+		//Create some Person objects
+		Person john = new Person("John", new Date(11, 8, 2017));
+		Person fred = new Person("Fred", new Date(21, 3, 1983));
+		Person julia = new Person("Julia", new Date(30, 2, 1943));
+		Person annie = new Person("Annie", new Date(2, 12, 1999));
+		
+		//Add people to the list
+		list.add(john);
+		list.add(fred);
+		list.add(julia);
+		list.add(annie);
+		
+		//Print out the list of people
+		list.print(ps);
+		
+		//Remove Julia from the list and print out the result
+		list.remove(julia);
+		list.print(ps);
+		
+		//Test the find method and print out the result
+		list.find("John").print(ps);
+	}
+
+}

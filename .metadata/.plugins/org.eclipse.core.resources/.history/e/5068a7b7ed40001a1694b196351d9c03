@@ -1,0 +1,18 @@
+
+public class Boss extends Person{
+	LopImproved workers;
+	int workerIndex = 0;
+	
+	public Boss(String name, Date dob) {
+		super(name, dob);
+		workers = new LopImproved();
+	}
+	
+	public void addWorker(Worker worker) {
+		workers.add(worker);
+	}
+	
+	public void subWorker(Worker worker) {
+		workers.remove(worker);
+	}
+}

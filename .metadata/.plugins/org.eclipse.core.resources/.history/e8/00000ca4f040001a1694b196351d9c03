@@ -1,0 +1,9 @@
+
+public class Worker extends Person{
+	Boss boss;
+	
+	public Worker(String name, Date dob, Boss boss) {
+		super(name, dob);
+		this.boss = boss;
+	}
+}
